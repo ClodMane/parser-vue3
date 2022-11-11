@@ -26,7 +26,7 @@
       <div v-for="ad in ads" class="card__wrapper" :key="ad.id">
         <div class="card__header">
           <span
-            @blur="changeCardHeader($event, ad)"
+            @click="changeCardHeader($event, ad)"
             class="card__header-title"
             contenteditable="true"
             >{{ ad.title }}</span
@@ -45,7 +45,7 @@
               class="img-pen img-pen-body"
             />
             <p
-              @blur="changeCardDescription($event, ad)"
+              @click="changeCardDescription($event, ad)"
               class="card__dscr"
               contenteditable="true"
             >
